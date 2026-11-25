@@ -3,7 +3,9 @@ public class Person {
     private String firstName;
     private int age;
 
-    public Person {}
+    public Person() {
+        this("", "");
+    }
 
     public Person(String lastName, String firstName) {
         this.lastName = lastName;
