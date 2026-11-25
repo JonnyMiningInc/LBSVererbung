@@ -32,6 +32,10 @@ public class Employee extends Person {
         this.salary = salary;
     }
 
+    public void salaryIncrease(double percent) {
+        salary = salary + salary * percent / 100;
+    }
+
     public void printAll() {
         System.out.println("Name: " + fullName());
         System.out.println("Age: " + getAge());
